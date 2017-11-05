@@ -1,0 +1,49 @@
+ul#navigation{
+    list-style-type: none;      /*Entfernt die Bullets*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+ul#navigation li{
+    float: left;
+}
+
+ul#navigation .active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+ul#navigation  li a{
+    display: block;
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+}
+
+ul#navigation li.right{
+    float: right;
+}
+
+@media screen and (max-width: 600px){
+    ul.navigation li.right,
+    ul#navigation li{float: none;}
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid gainsboro;
+}
+
+tr:hover{
+    background-color: lightblue;
+    border-bottom: 1px solid lightblue;
+}
