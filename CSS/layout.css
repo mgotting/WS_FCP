@@ -20,12 +20,17 @@ ul#navigation  li a{
     display: block;
     color: black;
     padding: 10px 15px;
-    text-decoration: none;
+    text-decoration: none;                  /*löscht Unterstricht von Link*/
     text-align: center;
+    font-family: Calibri;
 }
 
 ul#navigation li.right{
     float: right;
+}
+
+ul#navigation li a:hover{
+    background-color: lightblue;
 }
 
 @media screen and (max-width: 600px){
@@ -34,7 +39,7 @@ ul#navigation li.right{
 }
 
 table{
-    border-collapse: collapse;
+    border-collapse: collapse;              /*Wie wird der Rahmen dargestellt*/
 }
 
 th, td {
@@ -45,5 +50,12 @@ th, td {
 
 tr:hover{
     background-color: lightblue;
-    border-bottom: 1px solid lightblue;
+}
+
+h1{
+    font-family: "Apple Chancery";
+}
+
+a:visited{
+    color: dodgerblue;
 }
