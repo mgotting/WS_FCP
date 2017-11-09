@@ -1,19 +1,29 @@
-table{
-    border-collapse: separate;
+@media screen and (max-width: 600px) {
+    div {
+        float: none
+    }
 }
 
-th, td {
-    padding: 8px;
+div {
+    float: left;
+    width: 205px;
+}
+
+figure {
     text-align: center;
-    border-left: 1px solid gainsboro;
-    border-right: 1px solid gainsboro;
 }
 
-img{
+p {
+    clear: left;
+}
+
+h3 {
+    text-align: center;
+    box-sizing: border-box; /*height und width umfassen padding und border*/
+    height: 10px;
+}
+
+img {
     weight: 66px;
     height: 87px;
-}
-
-tr:hover{
-    background-color: transparent;
 }

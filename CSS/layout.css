@@ -1,5 +1,5 @@
-ul#navigation{
-    list-style-type: none;      /*Entfernt die Bullets*/
+ul#navigation {
+    list-style-type: none; /*Entfernt die Bullets*/
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -7,7 +7,7 @@ ul#navigation{
     border-top: 1px solid black;
 }
 
-ul#navigation li{
+ul#navigation li {
     float: left;
 }
 
@@ -16,30 +16,32 @@ ul#navigation .active {
     color: white;
 }
 
-ul#navigation  li a{
+ul#navigation li a {
     display: block;
     color: black;
     padding: 10px 15px;
-    text-decoration: none;                  /*löscht Unterstricht von Link*/
+    text-decoration: none; /*löscht Unterstricht von Link*/
     text-align: center;
     font-family: Calibri;
 }
 
-ul#navigation li.right{
+ul#navigation li.right {
     float: right;
 }
 
-ul#navigation li a:hover{
+ul#navigation li a:hover {
     background-color: lightblue;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
     ul.navigation li.right,
-    ul#navigation li{float: none;}
+    ul#navigation li {
+        float: none;
+    }
 }
 
-table{
-    border-collapse: collapse;              /*Wie wird der Rahmen dargestellt*/
+table {
+    border-collapse: collapse; /*Wie wird der Rahmen dargestellt*/
 }
 
 th, td {
@@ -48,14 +50,14 @@ th, td {
     border-bottom: 1px solid gainsboro;
 }
 
-tr:hover{
+tr:hover {
     background-color: lightblue;
 }
 
-h1{
-    font-family: "Apple Chancery";
+h1 {
+    font-family: "Arial Black";
 }
 
-a:visited{
+a:visited {
     color: dodgerblue;
 }
