@@ -22,7 +22,7 @@ ul#navigation li a {
     padding: 10px 15px;
     text-decoration: none; /*löscht Unterstricht von Link*/
     text-align: center;
-    font-family: Calibri;
+    font-family: Tahoma;
 }
 
 ul#navigation li.right {
@@ -38,6 +38,14 @@ ul#navigation li a:hover {
     ul#navigation li {
         float: none;
     }
+}
+
+main{
+    float: left;
+}
+
+body{
+    position: relative;
 }
 
 table {
