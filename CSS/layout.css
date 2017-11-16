@@ -1,4 +1,32 @@
-ul#navigation {
+/*Allgemeiner Teil*/
+h1 {
+    font-family: "Arial Black";
+}
+
+h2{
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    box-sizing: border-box; /*height und width umfassen padding und border*/
+    height: 10px;
+}
+
+p {
+    clear: left;
+}
+
+a:visited {
+    color: dodgerblue;
+}
+
+figure {
+    text-align: center;
+}
+
+/*Navigationsmenü*/
+#navigation {
     list-style-type: none; /*Entfernt die Bullets*/
     margin: 0;
     padding: 0;
@@ -7,16 +35,16 @@ ul#navigation {
     border-top: 1px solid black;
 }
 
-ul#navigation li {
+#navigation li {
     float: left;
 }
 
-ul#navigation .active {
+#navigation .active {
     background-color: dodgerblue;
     color: white;
 }
 
-ul#navigation li a {
+#navigation li a {
     display: block;
     color: black;
     padding: 10px 15px;
@@ -25,29 +53,17 @@ ul#navigation li a {
     font-family: Tahoma;
 }
 
-ul#navigation li.right {
+#navigation li.right {
     float: right;
 }
 
-ul#navigation li a:hover {
+#navigation li a:hover {
     background-color: lightblue;
 }
 
-@media screen and (max-width: 600px) {
-    ul.navigation li.right,
-    ul#navigation li {
-        float: none;
-    }
-}
+/*Navigationsmenü Ende*/
 
-main{
-    float: left;
-}
-
-body{
-    position: relative;
-}
-
+/*Mitgliedschaft*/
 table {
     border-collapse: collapse; /*Wie wird der Rahmen dargestellt*/
 }
@@ -62,10 +78,57 @@ tr:hover {
     background-color: lightblue;
 }
 
-h1 {
-    font-family: "Arial Black";
+/*Mitgliedschaft Ende*/
+
+/*Präsidium*/
+div.presidium {
+    float: left;
+    width: 205px;
 }
 
-a:visited {
-    color: dodgerblue;
+img.presidium {
+    weight: 66px;
+    height: 87px;
+}
+
+/*Präsidium Ende*/
+
+/*Startseite*/
+/*Banner auf Startseite*/
+#banner {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    padding: 0;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+#wrapper {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: -webkit-row;
+    flex-direction: -ms-row;
+    flex-direction: row;
+    border: none;
+}
+
+article {
+    flex: 0 0 800px;
+    padding: 4px;
+}
+
+aside {
+    flex: 0 0 250px;
+    padding: 4px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }

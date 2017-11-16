@@ -1,0 +1,20 @@
+/*Navigationsmenü*/
+ul.navigation li.right,
+ul#navigation li {
+    float: none;
+}
+
+/*Präsidium*/
+div.presidium {
+    float: none
+}
+
+/*Startseite*/
+aside {
+    float: none;
+    position: relative;
+}
+
+article {
+
+}
