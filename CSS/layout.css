@@ -1,9 +1,10 @@
 /*Allgemeiner Teil*/
 h1 {
-    font-family: "Arial Black";
+    font-family: Georgia;
+    text-align: center;
 }
 
-h2{
+h2 {
     text-align: center;
 }
 
@@ -13,20 +14,63 @@ h3 {
     height: 10px;
 }
 
+b {
+    font-size: large;
+}
+
 p {
     clear: left;
 }
 
-a:visited {
-    color: dodgerblue;
+#events p {
+    text-align: center;
 }
 
 figure {
     text-align: center;
 }
 
+body {
+    padding: 0;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+article {
+    flex: 2 2 75%;
+    margin-bottom: 10px;
+    border-bottom: solid 1px;
+}
+
+article figcaption{
+    font-size: small;
+    text-align: center;
+}
+
+aside {
+    flex: 0 0 25%;
+    padding: 10px;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+}
+
+#wrapper {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: -webkit-row;
+    flex-direction: -ms-row;
+    flex-direction: row;
+    border: none;
+}
+
 /*Navigationsmenü*/
-#navigation {
+nav ul {
     list-style-type: none; /*Entfernt die Bullets*/
     margin: 0;
     padding: 0;
@@ -35,49 +79,40 @@ figure {
     border-top: 1px solid black;
 }
 
-#navigation li {
+nav li {
     float: left;
 }
 
-#navigation .active {
+nav .active {
     background-color: dodgerblue;
     color: white;
 }
 
-#navigation li a {
+nav li a {
     display: block;
-    color: black;
     padding: 10px 15px;
     text-decoration: none; /*löscht Unterstricht von Link*/
     text-align: center;
-    font-family: Tahoma;
+    font-family: Verdana;
+    color: black;
 }
 
-#navigation li.right {
+nav li.right {
     float: right;
 }
 
-#navigation li a:hover {
+nav li a:hover {
     background-color: lightblue;
 }
-
 /*Navigationsmenü Ende*/
 
 /*Mitgliedschaft*/
-table {
-    border-collapse: collapse; /*Wie wird der Rahmen dargestellt*/
+div.membership {
+    float: left;
+    width: 25%;
+    padding-right: 20px;
+    padding-bottom: 10px;
 }
-
-th, td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid gainsboro;
-}
-
-tr:hover {
-    background-color: lightblue;
-}
-
 /*Mitgliedschaft Ende*/
 
 /*Präsidium*/
@@ -100,35 +135,13 @@ img.presidium {
     height: auto;
 }
 
-body {
-    padding: 0;
+h2#event {
+    text-align: center;
 }
 
-body * {
-    box-sizing: border-box;
-}
-
-#wrapper {
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    flex-direction: -webkit-row;
-    flex-direction: -ms-row;
-    flex-direction: row;
-    border: none;
-}
-
-article {
-    flex: 0 0 800px;
-    padding: 4px;
-}
-
-aside {
-    flex: 0 0 250px;
-    padding: 4px;
-}
-
-img {
+div#events {
+    background-color: cornflowerblue;
+    color: white;
+    box-shadow: 5px 5px gray;
     max-width: 100%;
-    height: auto;
 }

@@ -1,6 +1,13 @@
+h1{
+    text-align: left;
+}
+
+div#wrapper{
+    flex-direction: column;
+}
+
 /*Navigationsmenü*/
-ul.navigation li.right,
-ul#navigation li {
+nav li, nav li.right {
     float: none;
 }
 
@@ -9,12 +16,9 @@ div.presidium {
     float: none
 }
 
-/*Startseite*/
-aside {
+/*Mitgliedschaft*/
+div.membership{
     float: none;
-    position: relative;
-}
-
-article {
-
+    padding-right: 0px;
+    width: 100%;
 }
