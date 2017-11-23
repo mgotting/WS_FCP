@@ -145,3 +145,21 @@ div#events {
     box-shadow: 5px 5px gray;
     max-width: 100%;
 }
+
+/*Spieler*/
+table{
+    caption-side: bottom;
+}
+thead{
+    background-color: dodgerblue;
+}
+th{
+    padding: 3px;
+    font-size: large;
+    text-align: center;
+}
+
+tbody td{
+    border: solid 1px;
+    width: 25%
+}
