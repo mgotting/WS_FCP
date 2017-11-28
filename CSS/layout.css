@@ -149,6 +149,11 @@ div#events {
 /*Spieler*/
 table{
     caption-side: bottom;
+    margin: 0px auto;
+}
+
+table tbody tr:hover{
+    background-color: powderblue;
 }
 thead{
     background-color: dodgerblue;
@@ -162,4 +167,8 @@ th{
 tbody td{
     border: solid 1px;
     width: 25%
+}
+
+td.right{
+    text-align: right;
 }
