@@ -1,4 +1,9 @@
 /*Allgemeiner Teil*/
+
+noscript {
+    background-color: red;
+}
+
 footer {
     text-align: center;
     border-bottom: solid 1px;
@@ -75,8 +80,8 @@ img {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-    flex-direction: -webkit-row;            /*lt. checker unbekannte Erweiterung des Herstellers*/
-    flex-direction: -ms-row;                /*lt. checker unbekannte Erweiterung des Herstellers*/
+    flex-direction: -webkit-row; /*lt. checker unbekannte Erweiterung des Herstellers*/
+    flex-direction: -ms-row; /*lt. checker unbekannte Erweiterung des Herstellers*/
     flex-direction: row;
     border: none;
 }
@@ -135,7 +140,7 @@ div.presidium {
     width: 205px;
 }
 
-div.presidium p{
+div.presidium p {
     text-align: center;
 }
 
