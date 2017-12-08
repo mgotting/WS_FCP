@@ -29,11 +29,7 @@ p {
 }
 
 #events {
-    display: none;
-}
-
-#events p {
-    text-align: center;
+    padding-left: 20px;
 }
 
 figure {
@@ -64,10 +60,10 @@ aside {
     padding: 10px;
 }
 
-button {
+#sichtbarkeit{
     width: 100%;
-    height: 100px;
-    font-size: xx-large;
+    height: 50px;
+    font-size: large;
 }
 
 img {

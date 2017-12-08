@@ -10,7 +10,7 @@
     <link rel="icon" href="pictures/fcp_logo.jpg" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="CSS/layout.css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="CSS/screen.css">
-    <script type="text/javascript" src="javascript/show.js"></script>
+    <script type="text/javascript" src="javascript/check.js"></script>
 </head>
 
 <body>
@@ -56,17 +56,21 @@
         </article>
     </main>
     <aside>
-        <div>
-            <button type="button" id="sichtbarkeit" onclick="show()">Veranstaltungen anzeigen</button>
-        </div>
         <div id="events">
             <h2>Veranstaltungen</h2>
-            <p>Weihnachtsfeier am 02.12.2017</p>
+            <p>23.12.2017 Weihnachtsfeier</p>
+            <p>18.01.2017 Hallenturnier</p>
+            <p>18.03.2018 Irish meet bayerisch</p>
         </div>
+        <form>
+            Um Veranstaltungen für Erwachsene zu sehen, trage dein Alter ein.
+            <input type="number" name="number" min="1" max="100">
+            <button type="button" id="check" onclick="ageChecker(number)">prüfen</button>
+        </form>
     </aside>
 </div>
 <footer>
-    &copy FC Pasenbach
+    &copy; FC Pasenbach
 </footer>
 </body>
 </html>
