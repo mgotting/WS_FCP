@@ -1,13 +1,14 @@
+/*Klasse zur Sortierung von Tabellen, die Zahlen und Buchstaben enthalten (Bubblesort). Angelehnt an W3-Tutorial*/
 function sortingTable(n) {
     //Variablen definieren
-    var table, dir, rows, switching, shouldSwitch, switchcount=0, value;
-    table = document.getElementById("sortierbar");
-    switching = true;
-    dir = "asc";
-    value = "s";
+    var table = document.getElementById("sortierbar");
+    var shouldSwitch, switchcount = 0;
+    var switching = true;
+    var dir = "asc";
+    var value = "s";
     while (switching) {
         switching = false;
-        rows = table.getElementsByTagName("tr");
+        var rows = table.getElementsByTagName("tr");
         for (var i = 1; i < (rows.length - 1); i++) {
             shouldSwitch = false;
             //erhalte die Elemente die untereinander stehen
@@ -17,14 +18,14 @@ function sortingTable(n) {
             if (isNaN(x.innerHTML) == false) {
                 value = "n";
             }
-            //Umwandeln in kleinbuchstaben, dann vergleich. Fallunterscheidung auf- und absteigend
+            //Wenn String, dann umwandeln in Kleinbuchstaben, dann vergleich. Fallunterscheidung auf- und absteigend
             if (dir == "asc") {
                 if (value == "s") {
                     if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-                        shouldSwitch = true;
+                        shouldSwitch = true;    //Boolean Werte sollen getauscht werden auf true setzen
                         break;
                     }
-                } else {
+                } else { //Wenn es sich um eine Zahl handelt
                     if (parseInt(x.innerHTML) > parseInt(y.innerHTML)) {
                         shouldSwitch = true;
                         break;

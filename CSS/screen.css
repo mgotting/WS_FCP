@@ -1,8 +1,8 @@
-h1{
+h1 {
     text-align: left;
 }
 
-div#wrapper{
+div#wrapper {
     flex-direction: column;
 }
 
@@ -17,16 +17,16 @@ div.presidium {
 }
 
 /*Mitgliedschaft*/
-div.membership{
+div.membership {
     float: none;
     padding-right: 0px;
     width: 100%;
 }
 
-aside{
+aside {
     order: 1;
 }
 
-#wrapper main{
+#wrapper main {
     order: 2;
 }

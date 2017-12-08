@@ -60,7 +60,7 @@ aside {
     padding: 10px;
 }
 
-#sichtbarkeit{
+#sichtbarkeit {
     width: 100%;
     height: 50px;
     font-size: large;
@@ -75,8 +75,8 @@ img {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-    flex-direction: -webkit-row;
-    flex-direction: -ms-row;
+    flex-direction: -webkit-row;            /*lt. checker unbekannte Erweiterung des Herstellers*/
+    flex-direction: -ms-row;                /*lt. checker unbekannte Erweiterung des Herstellers*/
     flex-direction: row;
     border: none;
 }
@@ -135,6 +135,10 @@ div.presidium {
     width: 205px;
 }
 
+div.presidium p{
+    text-align: center;
+}
+
 img.presidium {
     width: 66px;
     height: 87px;
@@ -163,7 +167,7 @@ div#events {
 /*Spieler*/
 table {
     caption-side: bottom;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 
 table tbody tr:hover {
