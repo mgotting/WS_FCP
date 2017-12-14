@@ -15,12 +15,12 @@ function sortingTable(n) {
             var x = rows[i].getElementsByTagName("td")[n];
             var y = rows[i + 1].getElementsByTagName("td")[n];
             //Prüfung, ob es sich um eine Zahl oder einen String handelt
-            if (isNaN(x.innerHTML) == false) {
+            if (isNaN(x.innerHTML) === false) {
                 value = "n";
             }
             //Wenn String, dann umwandeln in Kleinbuchstaben, dann vergleich. Fallunterscheidung auf- und absteigend
-            if (dir == "asc") {
-                if (value == "s") {
+            if (dir === "asc") {
+                if (value === "s") {
                     if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
                         shouldSwitch = true;    //Boolean Werte sollen getauscht werden auf true setzen
                         break;
@@ -31,8 +31,8 @@ function sortingTable(n) {
                         break;
                     }
                 }
-            } else if (dir == "desc") {
-                if (value == "s") {
+            } else if (dir === "desc") {
+                if (value === "s") {
                     if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
                         shouldSwitch = true;
                         break;
@@ -52,7 +52,7 @@ function sortingTable(n) {
             switchcount++;
         } else {
             //Sortierrichtung umkehren, sofern noch nicht sortiert wurde
-            if (switchcount == 0 && dir == "asc") {
+            if (switchcount === 0 && dir === "asc") {
                 dir = "desc";
                 switching = true;
             }
