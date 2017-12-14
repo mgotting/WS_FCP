@@ -80,8 +80,6 @@ img {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-    flex-direction: -webkit-row; /*lt. checker unbekannte Erweiterung des Herstellers*/
-    flex-direction: -ms-row; /*lt. checker unbekannte Erweiterung des Herstellers*/
     flex-direction: row;
     border: none;
 }
