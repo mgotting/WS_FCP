@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$USER_HOME$/Dropbox/Studium/5. Semester/Web-Techniken/Übung/Demos/.idea/Demos.iml" filepath="$USER_HOME$/Dropbox/Studium/5. Semester/Web-Techniken/Übung/Demos/.idea/Demos.iml" />
+      <module fileurl="file://$USER_HOME$/Dropbox/Studium/5. Semester/Web-Techniken/Übung/DjangoDemo/.idea/DjangoDemo.iml" filepath="$USER_HOME$/Dropbox/Studium/5. Semester/Web-Techniken/Übung/DjangoDemo/.idea/DjangoDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/WS_FCP.iml" filepath="$PROJECT_DIR$/.idea/WS_FCP.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../WT_Gruppenarbeit/.idea/WT_Gruppenarbeit.iml" filepath="$PROJECT_DIR$/../../WT_Gruppenarbeit/.idea/WT_Gruppenarbeit.iml" />
     </modules>
